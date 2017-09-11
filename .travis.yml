@@ -1,0 +1,14 @@
+language: python
+
+cache:
+  - pip
+
+install:
+  - pip install -e .[testing]
+
+script:
+  - pytest tests
+
+python:
+  - "3.5"
+  - "3.6"
