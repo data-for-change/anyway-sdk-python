@@ -1,0 +1,11 @@
+[MESSAGES CONTROL]
+disable=R,C
+enable=trailing-whitespace
+
+[REPORTS]
+reports=no
+score=no
+output-format=parseable
+
+[FORMAT]
+max-line-length=120
