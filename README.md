@@ -1,4 +1,4 @@
-# Anyway SDK ![Build Status](https://travis-ci.org/hasadna/anyway-sdk-python.png)
+# Anyway SDK ![Build Status](https://travis-ci.org/hasadna/anyway-sdk-python.png) [![Build status](https://ci.appveyor.com/api/projects/status/pg5qvt62y16bu4k5?svg=true)](https://ci.appveyor.com/project/r-darwish/anyway-sdk-python)
 Python SDK for [anyway.co.il](https://anyway.co.il).
 
 ## Installation

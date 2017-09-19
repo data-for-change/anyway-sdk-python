@@ -1,0 +1,13 @@
+environment:
+  matrix:
+    - PYTHON: "C:\\Python35\\python.exe"
+    - PYTHON: "C:\\Python36\\python.exe"
+
+install:
+  - "%PYTHON% -m pip install -U pip wheel"
+  - "%PYTHON% -m pip install --no-cache-dir -e .[testing]"
+
+build: off
+
+test_script:
+  - "%PYTHON% -m pytest tests"
