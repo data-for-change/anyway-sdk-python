@@ -20,8 +20,8 @@ class Anyway:
             zoom=17, thin_markers='false', approx=1, accurate=1, show_markers=1, show_urban=3,
             show_intersection=3, show_lane=3, show_day=7, show_holiday=1,
             show_time=24, start_time=25, end_time=25, weather=0, road=0,
-            start_date=self._format_date(datetime.today()),
-            end_date=self._format_date(datetime(2017, 1, 1)),
+            start_date=self._format_date(datetime(2013, 1, 1)),
+            end_date=self._format_date(datetime.today()),
             seperation=0, surface=0, acc_type=0, controlmeasure=0, district=0, case_type=0)
 
         response = self._session.get(url)
