@@ -1,7 +1,9 @@
-from yarl import URL
+from .accident import Accident
+from .location import get_location_bounding_box
 from datetime import datetime
 from requests import Session
-from .location import get_location_bounding_box
+from yarl import URL
+
 
 class Anyway:
     def __init__(self, url='https://www.anyway.co.il'):
@@ -27,4 +29,4 @@ class Anyway:
 
         response = self._session.get(url)
         response.raise_for_status()
-        return response.json()['markers']
+        return [Accident.from_json(marker) for marker in response.json()['markers']]
